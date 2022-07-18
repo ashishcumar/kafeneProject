@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    background-color: #F6F7FB;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0px 2px 10px lightslategray;
+    background-color: white;
+}
+
+#nav_Left{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+#logoContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoContainer img{
+    height: 28px;
+    width: 28px;
+    margin: 0px 10px 0 50px;
+}
+
+#logoContainer span{
+    font-size: calc(22px + 0.2vw );
+    margin: 0 10px;
+}
+
+#Navbar_Navigation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    height: 70px;
+}
+
+#Navbar_Navigation span{
+    margin: 0px 10px;
+    font-size: calc(16px + 0.1vw);
+    height: 70px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.active{
+    color: #20B883;
+    border-bottom: 3px solid #20B883;
+}
+
+
+#logoutDiv{
+display:flex;
+justify-content: flex-end;
+align-items: center;
+font-size: calc(16px + 0.1vw);
+margin: 0px 20px;
+cursor: pointer;
+}
+
+section{
+    width: 85vw;
+    margin: 50px auto;
+}
+
+section h1{
+    font-size: calc(30px + 0.5vw);
+    margin: 20px 0;
+}
+
+#filter_Table_Container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#filterContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#filterContainer h3{
+    font-size: calc(28px + 0.1vw);
+    margin: 8px 0;
+}
+
+#filterContainer div{
+  margin: 8px 0;
+  font-size: 18px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#filterContainer input{
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+}
+
+table{
+ width: 100%;
+ justify-content: space-evenly;
+}
+
+table tr th{
+    font-size: calc(18px);
+    padding: 10px  25px;
+    text-align: left;
+}
+
+table tr td{
+    padding:12px 24px;
+    font-size: calc(15px);
+}
+th{    
+    background-color: #F6F7FB;
+}
+
+tr{
+    background-color: white;
+}
+
+#order_TimeSpan,#order_amount{
+    font-size: 17px;
+    color: #8C8C8C
+
+}
+
+.none{
+    display: none;
+}
+
+
+#PmedicineName,#Pexpiry{
+    font-weight: bold;
+}
+
+
+#Pid,#Pbrands,#PunitPrice,#PStock,#Oamount,#Oid{
+    color: #8C8C8C
+}
+
+#UserDataContainer{
+    width: 80vw;
+}
+
+button{
+    background-color: #20B883;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    width: 130px;
+    color: white;
+}
+
+input{
+    width: 550px;
+    height: 50px;
+    border-bottom: 2px solid #8C8C8C;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin: 5px 10px;
+    padding: 5px 25px;
+}
+
+input::placeholder{
+    font-size: 18px;
+    color: #757575;
+}
+
+#inputContainer{
+    margin: 20px 0;
+}
+
+#LoginBtn{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+#loginBox{
+    width: 500px;
+    height: 340px;
+    margin:50px auto;
+    box-shadow: 2px 2px 10px lightslategray;
+   padding: 20px 0px 10px 0px;
+}
+
+#loginBox h1{
+    margin-left: 25px;
+}
+
+#userName,#passWord{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+#userName::placeholder,#passWord::placeholder{
+   font-size: 16px;
+}
+

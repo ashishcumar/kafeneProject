@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png">
+
+    <link rel="stylesheet" href="style.css">
+    <title> KAFENE</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav_Left">
+                <div id="logoContainer">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                    <span> Kafene </span>
+                </div>
+                <div id="Navbar_Navigation">
+                    <span id="navig1" > Orders  </span>
+                    <span id="navig2" > Products </span>
+                    <span id="navig3" > Users </span>
+                   </div>
+            </div>
+            <div id="logoutDiv">
+                Logout
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1> Users </h1>
+        <div id="inputContainer">
+            <input type="text" id="searchName" placeholder="Search By Name"> <button id="reset">Reset</button>
+        </div>
+
+        <div id="UserDataContainer">
+
+            <div id="tableContainer">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>User Avatar</th>
+                        <th>Full Name</th>
+                        <th>DoB</th>
+                        <th>Gender</th>
+                        <th>Current Location</th>
+                    </tr>
+                    <tbody id="tbody_users">
+                        <!--   data from javascript api -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script src="users.js"></script>
+</body>
+
+</html>

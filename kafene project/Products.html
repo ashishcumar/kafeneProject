@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png">
+
+    <link rel="stylesheet" href="style.css">
+    <title> KAFENE</title>
+</head>
+
+<body>
+    <header>
+<nav>
+<div id="nav_Left"> 
+   <div id="logoContainer">
+   <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+   <span> Kafene </span>
+   </div>
+   <div id="Navbar_Navigation">
+    <span id="navig1" > Orders  </span>
+    <span id="navig2" > Products </span>
+    <span id="navig3" > Users </span>
+   </div>
+</div>
+<div id="logoutDiv">
+    Logout
+</div>
+</nav>
+    </header>
+
+    <section>
+     <h1> Products </h1>
+
+     <div id="filter_Table_Container">
+        <div id="filterContainer">
+            <h3>Filters</h3>
+            <div> Count: <span id="Product_Count">0</span> </div>
+          <div>
+            <input type="checkbox" checked name="New" id="Expired"> Expired
+          </div>   
+          <div>
+            <input type="checkbox" checked name="Packed" id="LowStock"> Low Stock
+          </div>  
+        </div>
+
+        <div id="tableContainer">
+            <table>
+               <tr>
+                   <th >ID</th>
+                   <th >Product Name</th>
+                   <th >Product Brand</th>
+                   <th >Expiry</th>
+                   <th >Unit Price</th>
+                   <th >Stock</th>
+               </tr>
+               <tbody id="tbody_Products">
+           <!--   data from javascript api -->
+               </tbody>
+            </table>
+        </div>
+     </div>    
+
+
+    </section>
+
+
+<script src="products.js"></script>
+</body>
+
+</html>
